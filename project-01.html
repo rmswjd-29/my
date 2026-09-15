@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coupang Review UX · Case Study · 근정 Product Designer</title>
+  <meta name="description" content="리뷰 신뢰 부족으로 길어진 구매 판단 경험을 개선했습니다. Coupang Review UX Case Study.">
+  
+  <!-- Pretendard Web Font -->
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="case-study-page">
+  <!-- Atmospheric background glow & grid lines -->
+  <div class="bg-grid-overlay" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="brand-group">
+        <a href="index.html" class="logo">
+          <span class="logo-name">GEUNJEONG</span>
+          <span class="logo-status-dot"></span>
+          <span class="logo-sub">PRODUCT DESIGNER</span>
+        </a>
+        <span class="header-intro">문제를 발견하고, 더 나은 경험으로 해결합니다.</span>
+      </div>
+
+      <div class="header-right-meta">
+        <a href="index.html#work" class="meta-capsule link-capsule">← BACK TO ARCHIVE</a>
+        <span class="meta-capsule">CASE // 01</span>
+      </div>
+
+      <nav class="nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html#work" class="nav-link"><span class="nav-num">01</span>Work</a></li>
+          <li class="nav-item"><a href="index.html#about" class="nav-link"><span class="nav-num">02</span>About</a></li>
+          <li class="nav-item"><a href="index.html#contact" class="nav-link"><span class="nav-num">03</span>Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Breadcrumb & Status Bar -->
+  <div class="case-breadcrumb-bar">
+    <div class="case-container">
+      <div class="breadcrumb-inner">
+        <span class="bc-item"><a href="index.html">ARCHIVE</a></span>
+        <span class="bc-sep">/</span>
+        <span class="bc-item"><a href="index.html#work">SELECTED WORKS</a></span>
+        <span class="bc-sep">/</span>
+        <span class="bc-item current">COUPANG REVIEW UX</span>
+      </div>
+      <div class="reading-meta">
+        <span class="badge-reading">CASE STUDY · 4 MIN READ</span>
+      </div>
+    </div>
+  </div>
+
+  <main class="case-main">
+    <!-- 1. Project Hero -->
+    <section class="case-hero-section">
+      <div class="case-container">
+        <!-- Top Project Meta Info -->
+        <div class="case-hero-meta">
+          <div class="meta-pills">
+            <span class="pill-primary">PROJECT // 01</span>
+            <span class="pill-outline">UX RESEARCH · PRODUCT DESIGN</span>
+            <span class="pill-outline">YEAR 2026</span>
+          </div>
+          <span class="meta-archive-id">ARCHIVE-REF: #CP-REV-01</span>
+        </div>
+
+        <!-- Big Project Title & Subtitle -->
+        <div class="case-hero-header">
+          <h1 class="case-hero-title">
+            Coupang Review <span class="text-pink">UX</span>
+          </h1>
+          <p class="case-hero-sub">
+            리뷰 신뢰 부족으로 길어진 구매 판단 경험을 개선했습니다.
+          </p>
+        </div>
+
+        <!-- Key Message Accent Banner -->
+        <div class="case-key-message">
+          <span class="key-icon">✦</span>
+          <p class="key-text">
+            <strong>Key Thesis:</strong> 방대한 리뷰의 양이 아니라, <span class="text-pink">‘결정에 실질적으로 유효한 단 하나의 맥락’</span>을 빠르게 찾아주는 인터페이스.
+          </p>
+        </div>
+
+        <!-- Hero Large Visual Artifact -->
+        <div class="case-hero-visual-stage">
+          <div class="stage-corner tl">+</div>
+          <div class="stage-corner tr">+</div>
+          <div class="stage-corner bl">+</div>
+          <div class="stage-corner br">+</div>
+
+          <div class="hero-visual-screen-mockup">
+            <div class="screen-browser-chrome">
+              <div class="chrome-dots">
+                <span class="cdot"></span>
+                <span class="cdot"></span>
+                <span class="cdot"></span>
+              </div>
+              <span class="chrome-title">coupang.com / product / review-intelligence-v2</span>
+              <span class="chrome-status"><span class="pulse-dot"></span> LIVE PROTOTYPE</span>
+            </div>
+
+            <div class="screen-layout-preview">
+              <!-- Left Side: Product Glance -->
+              <div class="preview-panel-left">
+                <div class="product-thumb-box">
+                  <div class="thumb-media-art">
+                    <span class="thumb-badge">FEATURED ITEM</span>
+                    <span class="thumb-rating">★ 4.8 <span class="rating-sub">(3,420 Reviews)</span></span>
+                  </div>
+                </div>
+                <div class="product-summary-card">
+                  <div class="ps-label">EVALUATED COHORT</div>
+                  <div class="ps-value">94.8% Decision Certainty</div>
+                  <div class="ps-bar"><div class="ps-bar-fill"></div></div>
+                </div>
+              </div>
+
+              <!-- Right Side: Redesigned Review Intelligence Core -->
+              <div class="preview-panel-right">
+                <div class="core-tag-filter-row">
+                  <span class="filter-chip active">✦ 전체 균형 요약</span>
+                  <span class="filter-chip">한 달 실사용기 (842)</span>
+                  <span class="filter-chip">단점 검증 (190)</span>
+                  <span class="filter-chip">체형/사이즈 핏</span>
+                </div>
+
+                <div class="ai-balanced-summary-box">
+                  <div class="summary-header">
+                    <span class="summary-label"><span class="text-pink">AI TASTE &amp; TRUST</span> SUMMARY</span>
+                    <span class="summary-badge">FACT-CHECKED</span>
+                  </div>
+                  <div class="summary-grid-split">
+                    <div class="summary-pro">
+                      <span class="badge-pro">PROS (긍정 핵심)</span>
+                      <p>실제 한 달 이상 사용 유저의 91%가 배송 속도와 내구성에 만족했습니다.</p>
+                    </div>
+                    <div class="summary-con">
+                      <span class="badge-con">CONS (주의점)</span>
+                      <p>초기 조작 매뉴얼이 다소 불친절하다는 피드백이 23% 존재합니다.</p>
+                    </div>
+                  </div>
+                  <div class="summary-footer-link">
+                    <span>근거 리뷰 42건 직접 대조하기 →</span>
+                  </div>
+                </div>
+
+                <div class="verified-review-card">
+                  <div class="v-user-row">
+                    <span class="v-avatar">G</span>
+                    <div class="v-user-meta">
+                      <span class="v-name">30대 직장인 · 3회 재구매</span>
+                      <span class="v-badge">VERIFIED PURVEYOR</span>
+                    </div>
+                    <span class="v-rating">★ ★ ★ ★ ★</span>
+                  </div>
+                  <p class="v-comment">
+                    “스폰서성 리뷰에 지쳐서 블로그 검색하러 나갔었는데, 요약 근거가 명확하게 달려서 바로 구매 결정했습니다.”
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Project Overview -->
+    <section class="case-section overview-section">
+      <div class="case-container">
+        <div class="overview-grid">
+          <div class="overview-cell">
+            <span class="cell-label">ROLE</span>
+            <div class="cell-value">Product Designer</div>
+            <span class="cell-sub">Lead UX &amp; UI Design</span>
+          </div>
+
+          <div class="overview-cell">
+            <span class="cell-label">DURATION</span>
+            <div class="cell-value">4 Weeks</div>
+            <span class="cell-sub">Discovery to High-Fi Prototype</span>
+          </div>
+
+          <div class="overview-cell">
+            <span class="cell-label">SCOPE</span>
+            <div class="cell-value">UX Research / Design / UI</div>
+            <span class="cell-sub">End-to-End Decision Flow</span>
+          </div>
+
+          <div class="overview-cell highlight-cell">
+            <span class="cell-label text-pink">GOAL</span>
+            <div class="cell-value">구매 판단 단축 &amp; 신뢰도 향상</div>
+            <span class="cell-sub">정보 과잉 피로 해소 및 외부 이탈 방지</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Problem Section -->
+    <section class="case-section problem-section">
+      <div class="case-container">
+        <div class="section-label-tech">01 / PROBLEM</div>
+        
+        <h2 class="section-headline">
+          “리뷰는 수천 개였지만,<br>
+          <span class="text-pink">믿고 판단하기는</span> 어려웠습니다.”
+        </h2>
+
+        <p class="section-narrative">
+          소비자는 구매 전 확신을 얻기 위해 리뷰 탭으로 진입하지만, 쏟아지는 스폰서 리뷰와 단순 평점 나열로 인해 오히려 극심한 정보 피로를 겪고 있었습니다. 결국 사용자는 진짜 후기를 찾기 위해 외부 블로그와 커뮤니티로 이탈하고 있었습니다.
+        </p>
+
+        <!-- Problem Visualization Screen: Before Comparison -->
+        <div class="problem-visual-frame">
+          <div class="visual-header-bar">
+            <span class="vh-tag">BEFORE STATE // AS-IS FRICTION AUDIT</span>
+            <span class="vh-meta">FATIGUE INDEX: HIGH</span>
+          </div>
+          <div class="problem-split-display">
+            <div class="problem-screen-mock">
+              <div class="screen-glass-alert">
+                <span class="alert-icon">⚠</span>
+                <div class="alert-body">
+                  <span class="alert-title">정보 과잉 및 신뢰성 결여 (Friction Points)</span>
+                  <p>1. 광고성 5점 만발로 실제 단점 탐색에 12분 이상 소요</p>
+                  <p>2. 단순 키워드 태그만으로는 제품의 치명적 결함을 파악 불가</p>
+                  <p>3. 결국 인앱 리뷰를 이탈하여 포털 검색창으로 이동</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Research / Insight Section -->
+    <section class="case-section research-section">
+      <div class="case-container">
+        <div class="section-label-tech">02 / RESEARCH</div>
+
+        <h2 class="section-headline">
+          유저 행동 관찰에서 도출한<br>
+          <span class="text-pink">3가지 핵심 인사이트</span>
+        </h2>
+
+        <div class="insights-grid">
+          <!-- Insight Card 1 -->
+          <article class="insight-card">
+            <div class="card-meta-top">
+              <span class="insight-num">INSIGHT // 01</span>
+              <span class="insight-pill">SEARCH PATTERN</span>
+            </div>
+            <h3 class="insight-title">
+              광고성 리뷰가 많을수록<br>외부 탐색이 증가했습니다.
+            </h3>
+            <p class="insight-body">
+              유저는 인앱 리뷰의 순수성을 신뢰하지 못할 때 네이버 블로그나 유튜브 등으로 이탈하여 실제 구매까지의 리드타임이 2.4배 이상 지연되었습니다.
+            </p>
+            <div class="insight-metric-box">
+              <div class="metric-val text-pink">76%</div>
+              <div class="metric-caption">외부 재탐색 경험 유저 비율</div>
+            </div>
+          </article>
+
+          <!-- Insight Card 2 -->
+          <article class="insight-card">
+            <div class="card-meta-top">
+              <span class="insight-num">INSIGHT // 02</span>
+              <span class="insight-pill">PURCHASE CRITERIA</span>
+            </div>
+            <h3 class="insight-title">
+              사용자는 장점보다<br>단점을 빠르게 확인하고 싶어했습니다.
+            </h3>
+            <p class="insight-body">
+              구매 확신을 방해하는 '나에게 치명적인 결함'이 있는지 먼저 검증한 뒤에야 비로소 결제 버튼을 누르는 방어적 소비 패턴이 지배적이었습니다.
+            </p>
+            <div class="insight-metric-box">
+              <div class="metric-val">84%</div>
+              <div class="metric-caption">부정적 피드백 우선 필터 선호도</div>
+            </div>
+          </article>
+
+          <!-- Insight Card 3 -->
+          <article class="insight-card">
+            <div class="card-meta-top">
+              <span class="insight-num">INSIGHT // 03</span>
+              <span class="insight-pill">AI VERIFICATION</span>
+            </div>
+            <h3 class="insight-title">
+              AI 요약은 편리하지만<br>근거가 없어 신뢰하기 어려웠습니다.
+            </h3>
+            <p class="insight-body">
+              자동 생성된 요약 문장 자체는 매력적이나, '어떤 리뷰를 토대로 나온 결론인지' 원문 대조 링크가 없으면 할루시네이션 의심으로 효용이 급감했습니다.
+            </p>
+            <div class="insight-metric-box">
+              <div class="metric-val text-pink">0%</div>
+              <div class="metric-caption">근거 없는 요약에 대한 무조건적 신뢰</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Define Section -->
+    <section class="case-section define-section">
+      <div class="case-container">
+        <div class="section-label-tech">03 / DEFINE</div>
+
+        <!-- HMW Big Typographic Graphic -->
+        <div class="hmw-banner">
+          <div class="hmw-tag">CORE DESIGN QUESTION (HMW)</div>
+          <blockquote class="hmw-quote">
+            “수많은 리뷰 속에서<br>
+            <span class="text-pink">신뢰할 수 있는 정보</span>에<br>
+            더 빠르게 도달하게 하려면?”
+          </blockquote>
+          <div class="hmw-subtext">
+            필터링의 고도화와 투명한 근거 제시를 통해 리뷰 탐색 시간을 절반으로 단축하는 UX 솔루션을 정의했습니다.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Solution Section (Asymmetric Grid) -->
+    <section class="case-section solution-section">
+      <div class="case-container">
+        <div class="section-header-row">
+          <div class="section-label-tech">04 / SOLUTION</div>
+          <h2 class="section-headline">
+            신뢰와 속도를 회복하는 3단계 설계
+          </h2>
+        </div>
+
+        <div class="solution-flow">
+          <!-- Solution 01 -->
+          <article class="solution-block layout-left">
+            <div class="solution-info">
+              <span class="solution-step">SOLUTION 01</span>
+              <h3 class="solution-title">신뢰 가능한 리뷰 필터</h3>
+              <p class="solution-desc">
+                단순 최신순·별점순을 넘어 ‘한 달 이상 실사용자’, ‘실제 착용 핏 검증’, ‘재구매 고객’ 등 실질적 검증 태그로 한 번에 정제합니다.
+              </p>
+              <div class="solution-tags">
+                <span class="s-tag">Verified Purchase</span>
+                <span class="s-tag">1-Month Cohort</span>
+              </div>
+            </div>
+            <div class="solution-visual">
+              <div class="mockup-window">
+                <div class="window-bar">
+                  <span class="w-dot"></span>
+                  <span class="w-dot"></span>
+                  <span class="w-dot"></span>
+                  <span class="w-title">filter.module / smart-cohort</span>
+                </div>
+                <div class="window-body filter-demo">
+                  <div class="filter-ui-pills">
+                    <div class="f-pill active">✓ 한 달 실사용자 (842)</div>
+                    <div class="f-pill">반복 재구매 고객</div>
+                    <div class="f-pill">포토/영상 검증</div>
+                  </div>
+                  <div class="filter-result-preview">
+                    <span class="fr-label">FILTER IMPACT</span>
+                    <span class="fr-val">스폰서 및 광고성 의심 리뷰 89% 차단</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Solution 02 -->
+          <article class="solution-block layout-right">
+            <div class="solution-info">
+              <span class="solution-step">SOLUTION 02</span>
+              <h3 class="solution-title">긍정·부정 균형 AI 요약</h3>
+              <p class="solution-desc">
+                칭찬 일색의 요약을 배제하고, 장점과 주의해야 할 단점을 동일한 시각적 위계로 대조하여 편향 없는 판단 기준을 세워줍니다.
+              </p>
+              <div class="solution-tags">
+                <span class="s-tag">Balanced Synthesis</span>
+                <span class="s-tag">Bias Elimination</span>
+              </div>
+            </div>
+            <div class="solution-visual">
+              <div class="mockup-window">
+                <div class="window-bar">
+                  <span class="w-dot"></span>
+                  <span class="w-dot"></span>
+                  <span class="w-dot"></span>
+                  <span class="w-title">ai.synthesis / balance-ratio</span>
+                </div>
+                <div class="window-body balance-demo">
+                  <div class="balance-bars">
+                    <div class="b-row">
+                      <span class="b-label">긍정 포인트 (만족 요인)</span>
+                      <div class="b-track"><div class="b-fill pro" style="width: 78%;"></div></div>
+                    </div>
+                    <div class="b-row">
+                      <span class="b-label">부정 포인트 (주의 필요)</span>
+                      <div class="b-track"><div class="b-fill con" style="width: 22%;"></div></div>
+                    </div>
+                  </div>
+                  <div class="balance-card">
+                    <span class="bc-lead text-pink">CRITICAL FACTOR</span>
+                    <p class="bc-text">"사이즈가 반 치수 작게 나왔으므로 한 사이즈 업을 권장합니다."</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Solution 03 -->
+          <article class="solution-block layout-left">
+            <div class="solution-info">
+              <span class="solution-step">SOLUTION 03</span>
+              <h3 class="solution-title">근거 리뷰 직접 연결</h3>
+              <p class="solution-desc">
+                AI 요약 문장의 모든 핵심 문장에 앵커를 달아 클릭 한 번으로 원본 리뷰 문맥과 작성자의 프로필을 즉시 검증할 수 있습니다.
+              </p>
+              <div class="solution-tags">
+                <span class="s-tag">Evidence Linking</span>
+                <span class="s-tag">Transparency</span>
+              </div>
+            </div>
+            <div class="solution-visual">
+              <div class="mockup-window">
+                <div class="window-bar">
+                  <span class="w-dot"></span>
+                  <span class="w-dot"></span>
+                  <span class="w-dot"></span>
+                  <span class="w-title">evidence.anchor / instant-verify</span>
+                </div>
+                <div class="window-body evidence-demo">
+                  <div class="evidence-quote-box">
+                    <p class="eq-text">“배송 중 파손 없는 포장 상태 <span class="eq-pill">[리뷰 #142]</span>”</p>
+                    <div class="eq-drawer">
+                      <span class="eq-drawer-badge">VERIFIED SOURCE EXCERPT</span>
+                      <p class="eq-drawer-quote">“박스 안에 에어캡이 두 겹으로 싸여 있어서 파손 걱정 없었습니다.”</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Final Design Section (Full Width Hero Visual) -->
+    <section class="case-section final-design-section">
+      <div class="case-container">
+        <div class="section-header-row center">
+          <div class="section-label-tech">05 / FINAL DESIGN</div>
+          <h2 class="section-headline">
+            신뢰와 직관을 담은 최종 인터페이스
+          </h2>
+          <p class="section-narrative center-text">
+            복잡한 리뷰 데이터를 한눈에 구조화하고, 유저가 스스로 검증하고 확신할 수 있는 완결된 화면 흐름입니다.
+          </p>
+        </div>
+
+        <!-- Big App Canvas Showcase -->
+        <div class="final-canvas-stage">
+          <div class="stage-header-meta">
+            <span>FULL PRODUCTION CANVAS // MOBILE &amp; EXPANDED VIEW</span>
+            <span class="text-pink">100% VECTOR HIGH-FIDELITY</span>
+          </div>
+
+          <div class="final-mockup-triple-grid">
+            <!-- Screen 1: Filter Sheet -->
+            <div class="app-screen-frame">
+              <div class="app-chrome">
+                <span class="app-time">09:41</span>
+                <span class="app-title">신뢰 필터 탐색</span>
+              </div>
+              <div class="app-body">
+                <div class="ui-mockup-filter-panel">
+                  <div class="ui-pill active">실사용 1개월 이상</div>
+                  <div class="ui-pill">사이즈 솔직 후기</div>
+                  <div class="ui-pill">스폰서 제외</div>
+                  <div class="ui-divider"></div>
+                  <div class="ui-review-snippet">
+                    <span class="ui-star">★ ★ ★ ★ ★</span>
+                    <span class="ui-snip-title">내구성에 매우 만족</span>
+                    <p class="ui-snip-desc">매일 출퇴근길에 들고 다니는데 봉제선 뜯어짐 없이 짱짱합니다.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Screen 2: Central AI Balanced Summary (Highlighted) -->
+            <div class="app-screen-frame highlight-frame">
+              <div class="app-chrome">
+                <span class="app-time">09:41</span>
+                <span class="app-title text-pink">AI 균형 요약</span>
+              </div>
+              <div class="app-body">
+                <div class="ui-mockup-summary-center">
+                  <div class="ui-badge-pill">균형 잡힌 핵심 피드백</div>
+                  <div class="ui-box pro-box">
+                    <strong>만족 포인트</strong>
+                    <p>빠른 배송 및 마감 완성도</p>
+                  </div>
+                  <div class="ui-box con-box">
+                    <strong>주의 포인트</strong>
+                    <p>정사이즈보다 살짝 타이트함</p>
+                  </div>
+                  <div class="ui-cta-pill">근거 리뷰 12건 원문 보기 →</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Screen 3: Detail Deep Dive -->
+            <div class="app-screen-frame">
+              <div class="app-chrome">
+                <span class="app-time">09:41</span>
+                <span class="app-title">근거 리뷰 연결</span>
+              </div>
+              <div class="app-body">
+                <div class="ui-mockup-evidence-panel">
+                  <div class="ui-user-header">
+                    <div class="ui-avatar-circle">K</div>
+                    <div>
+                      <span class="ui-author">김*희 (실제 구매자)</span>
+                      <span class="ui-date">2026.03.12 작성</span>
+                    </div>
+                  </div>
+                  <div class="ui-verified-box">
+                    <p>“타사 제품 쓰다 넘어왔는데, 2주 써보니 소음이 거의 없어서 만족스럽네요.”</p>
+                  </div>
+                  <div class="ui-reaction-row">
+                    <span class="ui-helpful">도움이 돼요 142</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Impact Section -->
+    <section class="case-section impact-section">
+      <div class="case-container">
+        <div class="section-label-tech">06 / IMPACT</div>
+
+        <h2 class="section-headline">
+          숫자와 경험으로 증명된<br>
+          <span class="text-pink">정성적·정량적 성과</span>
+        </h2>
+
+        <div class="impact-cards-grid">
+          <!-- Impact 1 -->
+          <div class="impact-card">
+            <span class="impact-category">FASTER DECISION</span>
+            <h3 class="impact-metric text-pink">구매 판단 단축</h3>
+            <p class="impact-desc">
+              신뢰성 높은 실사용자 요약 덕분에 리뷰 탭에 머무르며 소모하던 탐색 시간이 대폭 줄어들었습니다.
+            </p>
+          </div>
+
+          <!-- Impact 2 -->
+          <div class="impact-card">
+            <span class="impact-category">HIGHER TRUST</span>
+            <h3 class="impact-metric">신뢰 가능한 리뷰 탐색</h3>
+            <p class="impact-desc">
+              긍정/부정 균형과 근거 대조 링크를 통해 인앱 리뷰 신뢰도가 크게 상승했습니다.
+            </p>
+          </div>
+
+          <!-- Impact 3 -->
+          <div class="impact-card">
+            <span class="impact-category">LESS SEARCH</span>
+            <h3 class="impact-metric text-pink">외부 탐색 감소</h3>
+            <p class="impact-desc">
+              진짜 단점을 찾기 위해 블로그나 포털로 이탈하던 사용자 여정이 제품 상세 내에서 완결되었습니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Next Project Section -->
+    <section class="next-project-section">
+      <div class="case-container">
+        <div class="next-project-card">
+          <div class="next-meta-row">
+            <span class="next-label">UP NEXT // PROJECT 02</span>
+            <span class="next-year">2025</span>
+          </div>
+          <h2 class="next-title">Product Archive</h2>
+          <p class="next-desc">기록이 만드는 더 나은 경험 — 시스템 아키텍처와 디자인 토큰의 진화</p>
+          <div class="next-action">
+            <a href="index.html#work" class="btn-primary">Next Project →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 10. Footer (Identical to Landing Page Design System) -->
+  <footer id="contact" class="footer">
+    <div class="footer-editorial-frame">
+      <div class="contact-cta-wrapper">
+        <div class="contact-header-badge">
+          <span class="badge-dot"></span>
+          <span class="contact-sub-label">LET'S</span>
+        </div>
+        
+        <h2 class="contact-headline">
+          <span class="headline-block">Work</span>
+          <span class="headline-block text-pink">Together.</span>
+        </h2>
+        
+        <p class="contact-desc">
+          좋은 질문이<br>
+          더 나은 경험을 만듭니다.
+        </p>
+        
+        <div class="contact-btn-area">
+          <a href="mailto:geunjeong@example.com" class="contact-btn" aria-label="Send email to Geunjeong">
+            <span class="contact-btn-inner">
+              <span class="contact-btn-text">Contact</span>
+              <span class="contact-btn-arrow">→</span>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-identity">
+          <span class="footer-name">GEUNJEONG · PORTFOLIO</span>
+          <span class="footer-subtext">CRAFTING EXPERIENCES FOR THE DIGITAL AGE</span>
+        </div>
+
+        <div class="footer-links">
+          <a href="mailto:geunjeong@example.com" class="footer-link"><span>Email</span><span class="link-arrow">↗</span></a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-link"><span>LinkedIn</span><span class="link-arrow">↗</span></a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-link"><span>Instagram</span><span class="link-arrow">↗</span></a>
+        </div>
+
+        <div class="footer-copyright">
+          © 2026 Geunjeong Portfolio. All Rights Reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

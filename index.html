@@ -1,235 +1,435 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>우바바바</title>
-    <!-- Pretendard 웹폰트 연결 -->
-  <link
-    rel="stylesheet"
-    crossorigin
-    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
-  >
-
-  <!-- Anton 웹폰트 연결 -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-
-  <link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin
-  >
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
-    rel="stylesheet"
-  >
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>근정 · Product Designer Portfolio Archive</title>
+  <meta name="description" content="문제를 발견하고, 더 나은 경험으로 해결합니다. 프로덕트 디자이너 근정의 포트폴리오 아카이브입니다.">
+  
+  <!-- Pretendard Web Font -->
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <!-- Header 시작 -->
-    <header class="header">
-        <div class="header_inner">
+  <!-- Atmospheric background glow & grid lines -->
+  <div class="bg-grid-overlay" aria-hidden="true"></div>
 
-            <!-- 로고 -->
-            <a href="index.html" class="header_logo">
-                <img src="imges/logo.svg" alt="로고">
-            </a>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="brand-group">
+        <a href="#" class="logo">
+          <span class="logo-name">GEUNJEONG</span>
+          <span class="logo-status-dot"></span>
+          <span class="logo-sub">PRODUCT DESIGNER</span>
+        </a>
+        <span class="header-intro">문제를 발견하고, 더 나은 경험으로 해결합니다.</span>
+      </div>
 
-            <!-- 오른쪽 메뉴 영역 -->
-            <div class="header_right">
-                <!-- 주요 메뉴 -->
-                <nav class="nav" aria-label="주요메뉴">
-                    <ul class="nav_list">
-                        <li><a href="about.html">ABOUT</a></li>
-                        <li><a href="project.html">PROJECT</a></li>
-                        <li><a href="contact.html">CONTACT</a></li>
-                    </ul>
-                </nav>
+      <div class="header-right-meta">
+        <span class="meta-capsule">LOC / SEOUL, KR</span>
+        <span class="meta-capsule">INDEX '26</span>
+      </div>
 
-                <!-- 문의하기 버튼 -->
-                <a href="contact.html" class="btn_contact">문의하기</a>
-            </div>
+      <nav class="nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#work" class="nav-link"><span class="nav-num">01</span>Work</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link"><span class="nav-num">02</span>About</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link"><span class="nav-num">03</span>Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Marquee Ticker: Editorial Atmosphere -->
+  <div class="editorial-ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>PRODUCT DESIGN ARCHIVE</span>
+      <span class="ticker-bullet">✦</span>
+      <span>SOLVING COMPLEX PROBLEMS</span>
+      <span class="ticker-bullet">✦</span>
+      <span>MINIMAL &amp; IMPACTFUL</span>
+      <span class="ticker-bullet">✦</span>
+      <span>USER EXPERIENCE ARCHITECTURE</span>
+      <span class="ticker-bullet">✦</span>
+      <span>PRODUCT DESIGN ARCHIVE</span>
+      <span class="ticker-bullet">✦</span>
+      <span>SOLVING COMPLEX PROBLEMS</span>
+      <span class="ticker-bullet">✦</span>
+      <span>MINIMAL &amp; IMPACTFUL</span>
+      <span class="ticker-bullet">✦</span>
+      <span>USER EXPERIENCE ARCHITECTURE</span>
+      <span class="ticker-bullet">✦</span>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero Section (Section ID: about) -->
+    <section id="about" class="hero-section">
+      <div class="hero-container">
+        <!-- Top Editorial Spec Bar -->
+        <div class="hero-spec-bar">
+          <span class="spec-item"><strong class="text-pink">SYSTEM:</strong> PD-ARCHIVE.V26</span>
+          <span class="spec-item"><strong>ROLE:</strong> PRODUCT DESIGNER / UX SPECIALIST</span>
+          <span class="spec-item"><strong>FOCUS:</strong> DATA-DRIVEN INTERFACES</span>
         </div>
-    </header>
-     <!-- Header 끝 -->
 
-     <!-- Main 시작 -->
-<main>
-        <!-- Hero 시작 -->
-        <section class="hero">
-            <img class="hero_img" src="imges/hero.png" alt="키링 이미지">
-        </section>
-        <!-- Hero 끝 -->
-
-        <!-- about 시작 -->
-        <section class="about">
-            <div class="about_text">
-                <p>이노컴즈는 비즈니스 성장을 돕는 <strong>IT 전문 기업</strong>으로</p>
-                <p>웹·앱·플랫폼 및 AI 기반 서비스 등 전 산업 분야에서 <strong>실질적 성과</strong>를 도출하며</p>
-                <p>기획부터 운영까지 고객사와 원팀으로 협력하여 <strong>지속 가능한 결과물</strong>을 만들어갑니다.</p>
+        <div class="hero-main-layout">
+          <div class="hero-content">
+            <div class="hero-badge-row">
+              <span class="hero-meta-label">SELECTED WORKS &amp; DESIGN SYSTEM</span>
+              <span class="hero-meta-available"><span class="pulse-dot"></span> OPEN FOR COLLABORATION</span>
             </div>
-            <div class="about_stats">
-                <!-- Since -->
-                 <div class="about_stat">
-                    <span class="about_label">SINCE</span>
-                    <h2 class="about_number">2001</h2>
-                 </div>
+            
+            <h1 class="hero-title">
+              <span class="hero-title-line">문제 해결을</span>
+              <span class="hero-title-line">설계하는 <span class="text-pink">디자이너</span></span>
+            </h1>
+            
+            <p class="hero-desc">
+              사용자의 일상 속 작은 불편함을 발견하고,<br>
+              더 나은 경험으로 연결하는 디자이너입니다.
+            </p>
+            
+            <div class="hero-action-group">
+              <a href="#work" class="btn-primary">View Projects ↓</a>
+              <a href="#contact" class="btn-ghost">Get In Touch ↗</a>
+            </div>
+          </div>
 
-                <!-- 가운데 세로 구분선 -->
-                <div class="about_divider"></div>
-
-                <!-- Project -->
-                <div class="about_stat">
-                    <span class="about_label">PROJECT</span>
-                    <h2 class="about_number">1000+</h2>
+          <!-- Asymmetric Hero Visual Art Piece -->
+          <div class="hero-visual" aria-hidden="true">
+            <div class="visual-editorial-stage">
+              <div class="editorial-backdrop-ring"></div>
+              <div class="editorial-glow-aura"></div>
+              
+              <!-- Floating Card 1: Data Insight -->
+              <div class="editorial-glass-card card-analytics">
+                <div class="glass-card-header">
+                  <span class="glass-tag">RESEARCH METRIC</span>
+                  <span class="glass-status">VERIFIED</span>
                 </div>
-            </div>
-        </section>
-        <!-- about 끝 -->
-
-        <!-- Project 시작 -->
-         <section class="project">
-
-            <!-- Project 제목 영역-->
-             <div class="project_heading">
-                <h2>Project</h2>
-                <p>우리는 이런 일을 합니다.</p>
-             </div>
-
-             <!-- Project 목록 -->
-              <div class="project_list">
-                <!-- Project 1 -->
-                 <article class="project_card">
-                    <!-- 프로젝트 설명 -->
-                     <div class="project_content">
-                        <h3>Application Development</h3>
-                        <p>웹·앱 및 플랫폼 구축 경험을 토대로 기획부터 운영까지 전 과정을 통합 지원하며 사용자 중심 설계와 안정적인 개발을 통해 실질적인 성과를 만드는 서비스를 제공합니다.</p>
-                        <div class="project_subtitles">
-                            <h4>Techniques</h4>
-                        </div>
-                        <div class="project_tags">
-                            <span>Platform</span>
-                            <span>User Experience</span>
-                            <span>System</span>
-                            <span>Service</span>
-                        </div>
-                     </div>
-
-                     <!-- 프로젝트 이미지 -->
-                      <div class="project_image">
-                        <img src="imges/project1.png" alt="프로젝트 1">
-                      </div>
-                 </article>
-
-                <!-- Project 2 -->
-                 <article class="project_card">
-                    <!-- 프로젝트 설명 -->
-                     <div class="project_content">
-                        <h3>AI Transformation</h3>
-                        <p>AI 기술과 데이터 기반 혁신을 통해 기업의 디지털 전환을 지원하며 업무 자동화, 예측 분석, 생성형 AI 등 다양한 솔루션을 통해 운영 효율성과새로운 비즈니스 가치를 제공합니다.</p>
-                        <div class="project_subtitles">
-                            <h4>Techniques</h4>
-                        </div>
-                        <div class="project_tags">
-                            <span>Large Language Model(LLM)</span>
-                            <span>Intelligence</span>
-                            <span>Analysis</span>
-                            <span>Big Data</span>
-                            <span>LAG</span>
-                            <span>Learning</span>
-                            <span>Vision</span>
-                        </div>
-                     </div>
-
-                     <!-- 프로젝트 이미지 -->
-                      <div class="project_image">
-                        <img src="imges/project2.png" alt="프로젝트 2">
-                      </div>
-                 </article>
-
-                <!-- Project 3 -->
-                 <article class="project_card">
-                    <!-- 프로젝트 설명 -->
-                     <div class="project_content">
-                        <h3>Enterprise Solutions</h3>
-                        <p>MES 및 생산·공정관리 등 기업 최적화 솔루션을 설계·구축하며 확장성과 안정성을 바탕으로 업무 효율을 극대화하고 지속 가능한 운영 환경을 제공하여 비즈니스 가치를 높입니다.</p>
-                        <div class="project_subtitles">
-                            <h4>Techniques</h4>
-                        </div>
-                        <div class="project_tags">
-                            <span>Data Platform</span>
-                            <span>Dashboard</span>
-                            <span>Automation</span>
-                            <span>Management System</span>
-                            <span>Reporting</span>
-                            <span>Smart Factory</span>
-                        </div>
-                     </div>
-
-                     <!-- 프로젝트 이미지 -->
-                      <div class="project_image">
-                        <img src="imges/project3.png" alt="프로젝트 3">
-                      </div>
-                 </article>
+                <div class="glass-card-metric">+38.4%</div>
+                <div class="glass-card-caption">Usability Satisfaction Improvement</div>
+                <div class="glass-sparkline">
+                  <span class="spark-bar h20"></span>
+                  <span class="spark-bar h40"></span>
+                  <span class="spark-bar h30"></span>
+                  <span class="spark-bar h60"></span>
+                  <span class="spark-bar h90 pink-bar"></span>
+                </div>
               </div>
 
-         </section>
+              <!-- Floating Card 2: Interactive Specimen -->
+              <div class="editorial-glass-card card-specimen">
+                <div class="glass-card-header">
+                  <span class="glass-tag">EXPLORATION</span>
+                  <span class="glass-pill">LIVE</span>
+                </div>
+                <div class="specimen-interactive-preview">
+                  <div class="specimen-switch-track active">
+                    <span class="specimen-knob"></span>
+                  </div>
+                  <span class="specimen-label">Frictionless Flow</span>
+                </div>
+              </div>
 
- <!-- Project 끝 -->
-
- <!-- Contact 시작 -->
-        <section class="contact">
-            <!-- 스티커들 -->
-             <img class="contact_sticker blue" src="imges/blue_sticker.svg">
-             <img class="contact_sticker red" src="imges/red_sticker.svg">
-
-            <!-- 텍스트 -->
-             <h2>ALWAYS INTERESTED IN HEARING<br>ABOUT NEW PROJECTS</h2>
-             <p>이노컴즈는 언제나 즐거운 공간에서 재미있게 기술을 창조하기 위해끊임없이 소통하고 노력합니다.<br>여러분과 함께 새로운 세상을 만들기 위해 항상 이 자리에 있겠습니다.</p>
-
-             <!-- VIEW ALL PORTFOLIO 버튼 -->
-             <a href="portfolio.html" class="btn_portfolio">VIEW ALL PORTFOLIO</a>
-        </section>
-<!-- Contact 끝 -->
-        
- </main>
- <!-- Main 끝 -->
-
- 
- <!-- footer 시작 -->
-    <footer class="footer">
-        <!-- 회사 정보 -->
-         <div class="footer_info">
-            <h2>유근정</h2>
-            <p><strong>Address.</strong>경기도 용인시 처인구 남부대로1556번길 17</p>
-            <p><strong>Tel.</strong>031-323-4969</p>
-            <p><strong>Email.</strong>service@incomes.net</p>
-         </div>
-
-        <!-- 구분선 -->
-         <div class="footer_line"></div>
-
-        <!-- 저작권과 태그 -->
-         <div class="footer_bottom">
-            <p>© 2026 Oz KIM. All rights reserved.</p>
-            <div class="footer_tags">
-                <span>Product Designer</span>
-                <span>UXUI</span>
+              <!-- Technical Corner Decors -->
+              <div class="tech-corner tl">+</div>
+              <div class="tech-corner tr">+</div>
+              <div class="tech-corner bl">+</div>
+              <div class="tech-corner br">+</div>
             </div>
-         </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- footer logo -->
-         <img class="footer_logo" src="imges/footer_logo.svg" alt="incomes logo">
-    </footer>
-<!-- footer 끝 -->
+    <!-- Featured Projects Section (Section ID: work) -->
+    <section id="work" class="projects-section">
+      <div class="section-header-editorial">
+        <div class="section-header-left">
+          <div class="section-label">SELECTED WORKS</div>
+          <h2 class="section-title">Featured Projects</h2>
+        </div>
+        <div class="section-header-right">
+          <span class="archive-count">[ 03 CASES ARCHIVED ]</span>
+          <p class="section-header-desc">단순 비주얼을 넘어 근거와 프로세스로 검증된 대표 프로덕트 프로젝트입니다.</p>
+        </div>
+      </div>
 
-<!-- 커스텀 커서 -->
-<div class="cursor"></div>
-<script src="script.js"></script>
+      <div class="projects-grid">
+        <!-- Project 01: Coupang Review UX -->
+        <article class="project-card">
+          <div class="card-editorial-top">
+            <span class="card-series">PROJECT // 01</span>
+            <span class="card-year">2026</span>
+          </div>
 
+          <div class="project-visual-wrapper">
+            <div class="project-visual visual-coupang">
+              <div class="project-mockup mockup-coupang">
+                <div class="mockup-chrome">
+                  <div class="mockup-dots">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </div>
+                  <span class="mockup-url">review.insight/coupang</span>
+                </div>
+                <div class="mockup-body">
+                  <div class="coupang-review-box">
+                    <div class="badge-trust">TRUST METRIC 98.2%</div>
+                    <div class="mockup-quote">“구매 의사결정에 실질적 도움을 주는 진짜 리뷰를 선별합니다.”</div>
+                    <div class="mockup-stats-row">
+                      <div class="stat-pill"><span class="text-pink">★ 4.9</span> Verified Reviewer</div>
+                      <div class="stat-pill">Helpful Rate 94%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <span class="project-num">ARCHIVE #01</span>
+          </div>
+
+          <div class="project-meta">
+            <div class="project-header-info">
+              <span class="project-category">UX Research · Product Design</span>
+              <h3 class="project-title">Coupang Review UX</h3>
+              <p class="project-desc">리뷰 경험을 더 신뢰할 수 있도록</p>
+            </div>
+            <div class="project-action-wrap">
+              <a href="project-01.html" class="btn-secondary">View Project →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 02: Product Archive -->
+        <article class="project-card">
+          <div class="card-editorial-top">
+            <span class="card-series">PROJECT // 02</span>
+            <span class="card-year">2025</span>
+          </div>
+
+          <div class="project-visual-wrapper">
+            <div class="project-visual visual-archive">
+              <div class="project-mockup mockup-archive">
+                <div class="mockup-chrome">
+                  <div class="mockup-dots">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </div>
+                  <span class="mockup-url">archive.sys/v2</span>
+                </div>
+                <div class="mockup-body">
+                  <div class="archive-tree">
+                    <div class="tree-header">
+                      <span class="folder-tag">SYSTEM FILES</span>
+                      <span class="folder-status">SYNCED</span>
+                    </div>
+                    <div class="archive-metrics-bars">
+                      <div class="tree-bar-item">
+                        <span class="tb-label">UX Architecture</span>
+                        <div class="tb-track"><div class="tb-fill w90"></div></div>
+                      </div>
+                      <div class="tree-bar-item">
+                        <span class="tb-label">Design Tokens</span>
+                        <div class="tb-track"><div class="tb-fill w75 pink-fill"></div></div>
+                      </div>
+                      <div class="tree-bar-item">
+                        <span class="tb-label">Documentation</span>
+                        <div class="tb-track"><div class="tb-fill w85"></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <span class="project-num">ARCHIVE #02</span>
+          </div>
+
+          <div class="project-meta">
+            <div class="project-header-info">
+              <span class="project-category">UX/UI Design · Product Design</span>
+              <h3 class="project-title">Product Archive</h3>
+              <p class="project-desc">기록이 만드는 더 나은 경험</p>
+            </div>
+            <div class="project-action-wrap">
+              <a href="#work" class="btn-secondary">View Project →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 03: UI Exploration -->
+        <article class="project-card">
+          <div class="card-editorial-top">
+            <span class="card-series">PROJECT // 03</span>
+            <span class="card-year">2025</span>
+          </div>
+
+          <div class="project-visual-wrapper">
+            <div class="project-visual visual-exploration">
+              <div class="project-mockup mockup-exploration">
+                <div class="mockup-chrome">
+                  <div class="mockup-dots">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </div>
+                  <span class="mockup-url">lab.prototype/motion</span>
+                </div>
+                <div class="mockup-body">
+                  <div class="motion-canvas">
+                    <div class="dial-container">
+                      <div class="dial-outer">
+                        <div class="dial-pointer"></div>
+                      </div>
+                    </div>
+                    <div class="motion-meta-box">
+                      <span class="motion-code">VELOCITY / 120fps</span>
+                      <span class="motion-value"><span class="text-pink">Fluid</span> Motion Curve</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <span class="project-num">ARCHIVE #03</span>
+          </div>
+
+          <div class="project-meta">
+            <div class="project-header-info">
+              <span class="project-category">UI Design · Product Design</span>
+              <h3 class="project-title">UI Exploration</h3>
+              <p class="project-desc">일상의 작은 불편함을 새롭게</p>
+            </div>
+            <div class="project-action-wrap">
+              <a href="#work" class="btn-secondary">View Project →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Design Approach Section -->
+    <section class="approach-section">
+      <div class="approach-container">
+        <aside class="approach-intro">
+          <div class="section-label">MY APPROACH</div>
+          <h2 class="section-title">From Problem<br>to Impact</h2>
+          <p class="approach-summary">
+            문제를 관찰하고, 핵심을 정의하며, 근거를 바탕으로 설계하고 지속적으로 검증합니다.
+          </p>
+          
+          <div class="approach-stamp">
+            <div class="stamp-circle">
+              <span class="stamp-text">PROCESS ✦ IMPACT</span>
+            </div>
+            <div class="stamp-desc">HUMAN-CENTERED &amp; SYSTEMATIC</div>
+          </div>
+        </aside>
+
+        <div class="approach-list">
+          <article class="approach-item">
+            <div class="approach-step-wrapper">
+              <span class="approach-step">01</span>
+              <span class="step-line"></span>
+            </div>
+            <div class="approach-body">
+              <div class="approach-phase-label">PHASE 01 // OBSERVATION</div>
+              <h3 class="approach-title">Discover <span class="approach-sep">—</span> <span class="approach-sub">문제를 관찰합니다.</span></h3>
+              <p class="approach-detail">사용자의 행동과 맥락을 관찰하여 문제의 시작점을 발견합니다.</p>
+            </div>
+          </article>
+
+          <article class="approach-item">
+            <div class="approach-step-wrapper">
+              <span class="approach-step">02</span>
+              <span class="step-line"></span>
+            </div>
+            <div class="approach-body">
+              <div class="approach-phase-label">PHASE 02 // SYNTHESIS</div>
+              <h3 class="approach-title">Define <span class="approach-sep">—</span> <span class="approach-sub">핵심 문제를 정의합니다.</span></h3>
+              <p class="approach-detail">관찰한 내용을 바탕으로 해결해야 할 핵심 문제를 정의합니다.</p>
+            </div>
+          </article>
+
+          <article class="approach-item">
+            <div class="approach-step-wrapper">
+              <span class="approach-step">03</span>
+              <span class="step-line"></span>
+            </div>
+            <div class="approach-body">
+              <div class="approach-phase-label">PHASE 03 // EXECUTION</div>
+              <h3 class="approach-title">Solve <span class="approach-sep">—</span> <span class="approach-sub">근거를 바탕으로 해결합니다.</span></h3>
+              <p class="approach-detail">사용자와 데이터를 기반으로 적절한 해결책을 설계합니다.</p>
+            </div>
+          </article>
+
+          <article class="approach-item">
+            <div class="approach-step-wrapper">
+              <span class="approach-step">04</span>
+              <span class="step-line"></span>
+            </div>
+            <div class="approach-body">
+              <div class="approach-phase-label">PHASE 04 // ITERATION</div>
+              <h3 class="approach-title">Validate <span class="approach-sep">—</span> <span class="approach-sub">결과를 검증하고 개선합니다.</span></h3>
+              <p class="approach-detail">결과를 확인하고 반복적으로 개선합니다.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer / Contact Section (Section ID: contact) -->
+  <footer id="contact" class="footer">
+    <div class="footer-editorial-frame">
+      <div class="contact-cta-wrapper">
+        <div class="contact-header-badge">
+          <span class="badge-dot"></span>
+          <span class="contact-sub-label">LET'S</span>
+        </div>
+        
+        <h2 class="contact-headline">
+          <span class="headline-block">Work</span>
+          <span class="headline-block text-pink">Together.</span>
+        </h2>
+        
+        <p class="contact-desc">
+          좋은 질문이<br>
+          더 나은 경험을 만듭니다.
+        </p>
+        
+        <div class="contact-btn-area">
+          <a href="mailto:geunjeong@example.com" class="contact-btn" aria-label="Send email to Geunjeong">
+            <span class="contact-btn-inner">
+              <span class="contact-btn-text">Contact</span>
+              <span class="contact-btn-arrow">→</span>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-identity">
+          <span class="footer-name">GEUNJEONG · PORTFOLIO</span>
+          <span class="footer-subtext">CRAFTING EXPERIENCES FOR THE DIGITAL AGE</span>
+        </div>
+
+        <div class="footer-links">
+          <a href="mailto:geunjeong@example.com" class="footer-link"><span>Email</span><span class="link-arrow">↗</span></a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-link"><span>LinkedIn</span><span class="link-arrow">↗</span></a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-link"><span>Instagram</span><span class="link-arrow">↗</span></a>
+        </div>
+
+        <div class="footer-copyright">
+          © 2026 Geunjeong Portfolio. All Rights Reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
-
 </html>
